@@ -18,9 +18,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 SharedPreferences.Editor editor=getSharedPreferences("data",MODE_PRIVATE).edit();
-                editor.putString("name","Tom");
-                editor.putInt("age",28);
-                editor.putBoolean("married",false);
+                editor.putString("name", "Tom");
+                editor.putInt("age", 28);
+                editor.putBoolean("married", false);
                 editor.commit();
             }
         });
@@ -29,12 +29,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 SharedPreferences preferences=getSharedPreferences("data",MODE_PRIVATE);
-                String name=preferences.getString("name","");
-                int age=preferences.getInt("age",0);
-                boolean married=preferences.getBoolean("married",false);
-                Log.d("MainActivity","name is"+name);
-                Log.d("MainActivity","age is"+age);
-                Log.d("MainActivity","married is"+married);
+                String name=preferences.getString("name", "");
+                int age=preferences.getInt("age", 0);
+                boolean married=preferences.getBoolean("married", false);
+                Log.d("MainActivity","name is"+ name);
+                Log.d("MainActivity","age is"+ age);
+                Log.d("MainActivity","married is"+ married);
             }
         });
     }
